@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Halloween Game </title>
+    <link rel="stylesheet" href="duoproject.css"/>
+
+</head>
+
+
+<body>
+    
+    <div class="signIn">
+        <ul>
+           <li><a href="makeAccount"> Make Account </a></li>
+           <li><a href="signIn"> Sign In </a></li>
+           <li><a href="More Games"> More Games </a></li>
+           <li><a href="Contact Us"> Contact Us </a></li>
+        </ul>
+
+    </div>
+
+    <div class="background">
+       <h1> HALLOWEEN GAME </h1>
+       <form>
+           <input type="text" id="name" placeholder="PLAYER NAME" required>
+           <button type="submit" id="sub"></button>
+        </form>
+ 
+       <button id="startGame" type="button" onclick='startgame()'> Start The Game </button>
+       <p id="welcomePlayer"></p>
+    
+    </div>
+    <audio controls loop  autoplay class="soundtrack">
+        <source src="scary.mp3" type="audio/mpeg">
+      </audio>
+       
+
+       
+
+ 
+    
+    
+    
+    
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">  
+    </script>
+    <script src="duoproject.js"></script>
+</body>
+</html>
