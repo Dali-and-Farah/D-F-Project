@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin: 0;
+}
+#game{
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+}
+#stickman{
+    width: 100px;
+    position: relative;
+    top: 280px
+
+}
+
+#obstacle{
+    width: 4 0px;
+    height: 35px;
+    background-color: crimson;
+    position: relative;
+    top: 250px;
+    left: 670px;
+    animation: obstacle 1.75s infinite linear;
+}
+@keyframes obstacle{
+    0%{left:670px;}
+    100%{left:-40px}
+}
