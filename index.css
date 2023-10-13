@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin: 0;
+}
+#game{
+    width: 700px;
+    height: 400px;
+    border: 13px solid rgb(174, 151, 39);
+    margin-left: 400px;
+    margin-top: 100px;
+    
+}
+#stickman{
+    width: 100px;
+    position: relative;
+    top: 300px;
+}
+.animate{
+    animation: jump 500ms infinite ;
+}
+
+#obstacle{
+    width: 40px;
+    height: 35px;
+    background-color: rgba(185, 105, 14, 0.932);
+    position: relative;
+    top: 250px;
+    left: 670px;
+    animation: obstacle 1.75s infinite linear;
+}
+@keyframes obstacle{
+    0%{left:670px;}
+    100%{left:-20px}
+}
+@keyframes jump{
+    0%{top: 250px;}
+    30%{top:100px;}
+    50%{top:100px}
+    100%{top: 280px}
+}
+body{
+    background-image: url(halloween-background.gif);
+}
+
+
