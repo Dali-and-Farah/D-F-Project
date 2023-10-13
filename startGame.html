@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="startGame.css"/>
 </head>
 <body>
+    <button id="TimerBut" style="width: 20%; height: 8%; font-size: 50px;">Time :<h3 id="timer"></h3></button>
     
+    
+
 
 
 
@@ -16,6 +19,28 @@
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous">  
+   </script>
+
+  <script >
+    function makeTimer(){
+    var count=0;
+    var timer = setInterval(function(){
+        count ++;
+        console.log(count);
+        if(count===60){
+            clearInterval(timer);
+      
+            console.log('Congratulation! You pass to the Next Level.');
+        }
+    }, 1000);
+    return timer
+}
+
+$('#TimerBut').on('click',function(){
+    $('#timer')[0].textContent = makeTimer();
+    
+});
+
    </script>
 <script src=""></script>
 </body>
