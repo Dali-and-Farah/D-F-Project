@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Welcome to Halloween Game </title>
-    <link rel="stylesheet" href="startGame.css"/>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <button id="TimerBut" style="width: 20%; height: 8%; font-size: 50px;">Time :<h3 id="timer"></h3></button>
+    <!-- <button id="TimerBut" style="width: 20%; height: 8%; font-size: 50px;">Time :<h3 id="timer"></h3></button> -->
+    <div id="game">
     
+        <div id="character" >
+            <img id="stickman" src= "https://media3.giphy.com/media/k8iE7ulpbJZIFjdmTD/giphy.gif?cid=6c09b9520jswh9e2y2k3x3nbgk2uer0m00vqd751h3yn52ht&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+        </div>
+        <div id="obstacle"></div>
     
-
-
-
-
-
+    </div>
     <script 
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous">  
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">  
    </script>
 
-  <script >
-    function makeTimer(){
-    var count=0;
-    var timer = setInterval(function(){
-        count ++;
-        console.log(count);
-        if(count===60){
-            clearInterval(timer);
-      
-            console.log('Congratulation! You pass to the Next Level.');
-        }
-    }, 1000);
-    return timer
-}
-
-$('#TimerBut').on('click',function(){
-    $('#timer')[0].textContent = makeTimer();
+<script >
+    /*function makeTimer(){
+        var count=0;
+        var timer = setInterval(function(){
+            count ++;
+            console.log(count);
+            if(count===60){
+                clearInterval(timer);
+                
+                console.log('Congratulation! You pass to the Next Level.');
+            }
+        }, 1000);
+        return timer
+    }
     
-});
-
-   </script>
-<script src=""></script>
+    $('#TimerBut').on('click',function(){
+        $('#timer')[0].textContent = makeTimer();
+        
+    });*/
+    
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
